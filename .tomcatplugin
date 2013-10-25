@@ -34,6 +34,7 @@
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/junit/junit/4.10/junit-4.10.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar</webClassPathEntry>
+        <webClassPathEntry>C:/Users/Administrator/.m2/repository/mysql/mysql-connector-java/5.1.25/mysql-connector-java-5.1.25.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/org/apache/httpcomponents/httpclient-cache/4.1.2/httpclient-cache-4.1.2.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/org/apache/httpcomponents/httpclient/4.1.2/httpclient-4.1.2.jar</webClassPathEntry>
