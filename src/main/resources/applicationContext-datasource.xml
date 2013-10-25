@@ -9,7 +9,7 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
     <context:annotation-config/>
-    <context:component-scan base-package="com.ezizoo.**"/>
+    <context:component-scan base-package="com.**"/>
 
     <bean
             class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -33,7 +33,7 @@
 
         <property name="maxActive" value="${jdbc.minPoolSize}"/>
         <property name="initialSize" value="${jdbc.initialpoolsize}"/>
-        <property name="maxWait" value="60000"/>
+        <property name="maxWait" value="6000"/>
         <property name="minIdle" value="${jdbc.minPoolSize}"/>
 
         <property name="timeBetweenEvictionRunsMillis" value="3000"/>
@@ -62,9 +62,9 @@
           scope="prototype">
         <property name="patterns">
             <list>
-                <value>com.ezizoo.*.dao.*</value>
-                <value>com.ezizoo.*.service.*</value>
-                <value>com.ezizoo.*.controller.*</value>
+                <value>com.apextom.dao.*</value>
+                <value>com.apextom.service.*</value>
+                <value>com.apextom.controller.*</value>
             </list>
         </property>
     </bean>

@@ -23,8 +23,8 @@
 	</bean>
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.ezizoo.**.mapper" />
-		<property name="markerInterface" value="com.ezizoo.framework.mapper.SqlMapper" />
+		<property name="basePackage" value="com.apextom.mapper" />
+		<property name="markerInterface" value="com.apextom.mapper.SqlMapper" />
 	</bean>
 </beans>
 
