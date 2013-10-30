@@ -19,6 +19,19 @@
 <base href="<%=path%>" target="_self">
 
 <script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery("#news_player").jCarouselLite({
+			btnNext : "#news_prev",
+			btnPrev : "#news_next",
+			mouseWheel : false,
+			visible : 2,
+			scroll : 1,
+			auto : 0,
+			vertical : true,
+			speed : 1000
+		});
+	});
+
 	var old_cur = parseInt("1");
 	var cur = old_cur;
 	jQuery(document).ready(function() {
@@ -221,65 +234,57 @@
 
 				<div class="sitetype">
 					<div>
-						<a><img src="admin/uploads/1269398230_831573.gif" width="72"
+						<a><img src="<%=path%>/img/home_pic1.gif" width="72"
 							border="0"></a>
 					</div>
 					<div class="sitetype_text">
-						<span class="index_title"><a href="website_building_1.html">网站建设类型</a></span>
+						<span class="index_title"><a href="website_building_1.html">TOEFL</a></span>
 						<h4>
-							<a href="website_building_1.html">宣传展示型网站 — 展示企业CI，提升企业整体形象
-								活动应用型网站 — 华丽...</a>
+							<a href="website_building_1.html">TOEFL是北美留学所需的必要考试之一！虽然其难度和SAT相比显得非常简单...</a>
 						</h4>
-						<span class="index_more"><em><a
-								href="website_building_1.html">MORE</a></em></span>
 					</div>
 				</div>
 				<div class="sitetype">
 					<div>
-						<a><img src="admin/uploads/1269398296_877624.gif" width="72"
+						<a><img src="<%=path%>/img/home_pic2.gif" width="72"
 							border="0"></a>
 					</div>
 					<div class="sitetype_text">
-						<span class="index_title"><a href="website_building_2.html">网站优化|网站推广</a></span>
+						<span class="index_title"><a href="website_building_2.html">SAT</a></span>
 						<h4>
-							<a href="website_building_2.html">网站优化/网站推广就是指如何让更多人知道你的网站,
-								利用互联网进行宣传推广活动。 推广网站的形式多样...</a>
+							<a href="website_building_2.html">SAT，又被视为美国高考，其分数在学生的申请成绩中起了重要的作用。 随着现在中国学生对这门考试准备...</a>
 						</h4>
-						<span class="index_more"><em><a
-								href="website_building_2.html">MORE</a></em></span>
 					</div>
 				</div>
 				<div class="sitetype">
 					<div>
-						<a><img src="admin/uploads/1269398351_90119.gif" width="72"
+						<a><img src="<%=path%>/img/home_pic3.gif" width="72"
 							border="0"></a>
 					</div>
 					<div class="sitetype_text">
-						<span class="index_title"><a href="website_building_3.html">网站技术维护</a></span>
+						<span class="index_title"><a href="website_building_3.html">AP</a></span>
 						<h4>
-							<a href="website_building_3.html">缤果创意本着“一站式”服务的标准，不仅为您提供建站服务，并为您提供的专业高效...</a>
+							<a href="website_building_3.html">AP是XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX...</a>
 						</h4>
-						<span class="index_more"><em><a
-								href="website_building_3.html">MORE</a></em></span>
 					</div>
 				</div>
 				<div class="sitetype">
 					<div>
-						<a><img src="admin/uploads/1269398374_684021.gif" width="72"
+						<a><img src="<%=path%>/img/home_pic4.gif" width="72"
 							border="0"></a>
 					</div>
 					<div class="sitetype_text">
-						<span class="index_title"><a href="website_building_4.html">网站建设流程</a></span>
+						<span class="index_title"><a href="website_building_4.html">GRE</a></span>
 						<h4>
-							<a href="website_building_4.html">客户提出网站建设申请 → 制定网站建设方案
-								→签订网站相关协议 → 网...</a>
+							<a href="website_building_4.html">GRE是XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX...</a>
 						</h4>
 						<span class="index_more"><em><a
 								href="website_building_4.html">MORE</a></em></span>
 					</div>
 				</div>
-
 			</div>
+			
+			
 			<div class="rightlayout">
 				<div id="news_player"
 					style="height: 242px; overflow: hidden; visibility: visible; position: relative; z-index: 2; left: 0px;">
@@ -287,37 +292,13 @@
 						style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 1089px; top: -363px;">
 						<li class="detail_right_content"
 							style="overflow: hidden; float: none; width: 290px; height: 100px;">
-							<a href="news_show_191.html"><img
-								src="admin/uploads/s1332469984_13648.gif" width="92" height="72"
-								border="0"></a>
-							<p>
-								<a href="news_show_191.html" class="greenone"
-									style="font-size: 13px;" title="缤果创意与上海德奈福洗染设备有限公司建立合作关系">缤果创意与上海德奈福洗染设备有限公司建立合作...</a><br>
-								将为德奈福提供网站建设<br>发表时间：2012-03-20
-							</p>
-							<div style="clear: both;"></div>
-						</li>
-						<li class="detail_right_content"
-							style="overflow: hidden; float: none; width: 290px; height: 100px;">
-							<a href="news_show_190.html"><img
-								src="admin/uploads/s1332231690_449040.gif" width="92"
-								height="72" border="0"></a>
-							<p>
-								<a href="news_show_190.html" class="greenone"
-									style="font-size: 13px;" title="缤果创意与上海贝汉建筑设计有限公司建立合作关系">缤果创意与上海贝汉建筑设计有限公司建立合作关...</a><br>
-								将为贝汉建筑提供网站建设<br>发表时间：2012-03-19
-							</p>
-							<div style="clear: both;"></div>
-						</li>
-						<li class="detail_right_content"
-							style="overflow: hidden; float: none; width: 290px; height: 100px;">
 							<a href="news_show_193.html"><img
 								src="admin/uploads/s1337677657_814396.jpg" width="92"
 								height="72" border="0"></a>
 							<p>
 								<a href="news_show_193.html" class="greenone"
-									style="font-size: 13px;" title="缤果创意搬家啦！">缤果创意搬家啦！</a><br>
-								缤果创意搬家啦！<br>发表时间：2012-05-22
+									style="font-size: 13px;" title="缤果创意搬家啦！">搬家啦！</a><br>
+								搬家啦！<br>发表时间：2013-10-30
 							</p>
 							<div style="clear: both;"></div>
 						</li>
@@ -328,44 +309,8 @@
 								border="0"></a>
 							<p>
 								<a href="news_show_189.html" class="greenone"
-									style="font-size: 13px;" title="Fla-bingo已正式上线啦!">Fla-bingo已正式上线啦!</a><br>
-								Fla-bingo已正式上线啦!<br>发表时间：2012-03-28
-							</p>
-							<div style="clear: both;"></div>
-						</li>
-						<li class="detail_right_content"
-							style="overflow: hidden; float: none; width: 290px; height: 100px;">
-							<a href="news_show_192.html"><img
-								src="admin/uploads/s1332470723_900187.gif" width="92"
-								height="72" border="0"></a>
-							<p>
-								<a href="news_show_192.html" class="greenone"
-									style="font-size: 13px;" title="缤果创意与纽斯凯威(加拿大)国际顾问有限公司建立合作关系">缤果创意与纽斯凯威(加拿大)国际顾问有限公司...</a><br>
-								将为纽斯凯威提供网站建设<br>发表时间：2012-03-21
-							</p>
-							<div style="clear: both;"></div>
-						</li>
-						<li class="detail_right_content"
-							style="overflow: hidden; float: none; width: 290px; height: 100px;">
-							<a href="news_show_191.html"><img
-								src="admin/uploads/s1332469984_13648.gif" width="92" height="72"
-								border="0"></a>
-							<p>
-								<a href="news_show_191.html" class="greenone"
-									style="font-size: 13px;" title="缤果创意与上海德奈福洗染设备有限公司建立合作关系">缤果创意与上海德奈福洗染设备有限公司建立合作...</a><br>
-								将为德奈福提供网站建设<br>发表时间：2012-03-20
-							</p>
-							<div style="clear: both;"></div>
-						</li>
-						<li class="detail_right_content"
-							style="overflow: hidden; float: none; width: 290px; height: 100px;">
-							<a href="news_show_190.html"><img
-								src="admin/uploads/s1332231690_449040.gif" width="92"
-								height="72" border="0"></a>
-							<p>
-								<a href="news_show_190.html" class="greenone"
-									style="font-size: 13px;" title="缤果创意与上海贝汉建筑设计有限公司建立合作关系">缤果创意与上海贝汉建筑设计有限公司建立合作关...</a><br>
-								将为贝汉建筑提供网站建设<br>发表时间：2012-03-19
+									style="font-size: 13px;" title="Fla-bingo已正式上线啦!">Apex-Tom已正式上线啦!</a><br>
+								Apex-Tom已正式上线啦!<br>发表时间：2012-03-28
 							</p>
 							<div style="clear: both;"></div>
 						</li>
@@ -376,8 +321,8 @@
 								height="72" border="0"></a>
 							<p>
 								<a href="news_show_193.html" class="greenone"
-									style="font-size: 13px;" title="缤果创意搬家啦！">缤果创意搬家啦！</a><br>
-								缤果创意搬家啦！<br>发表时间：2012-05-22
+									style="font-size: 13px;" title="缤果创意搬家啦！">搬家啦！</a><br>
+								搬家啦！<br>发表时间：2013-10-30
 							</p>
 							<div style="clear: both;"></div>
 						</li>
@@ -388,13 +333,38 @@
 								border="0"></a>
 							<p>
 								<a href="news_show_189.html" class="greenone"
-									style="font-size: 13px;" title="Fla-bingo已正式上线啦!">Fla-bingo已正式上线啦!</a><br>
-								Fla-bingo已正式上线啦!<br>发表时间：2012-03-28
+									style="font-size: 13px;" title="Fla-bingo已正式上线啦!">Apex-Tom已正式上线啦!</a><br>
+								Apex-Tom已正式上线啦!<br>发表时间：2012-03-28
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_193.html"><img
+								src="admin/uploads/s1337677657_814396.jpg" width="92"
+								height="72" border="0"></a>
+							<p>
+								<a href="news_show_193.html" class="greenone"
+									style="font-size: 13px;" title="缤果创意搬家啦！">搬家啦！</a><br>
+								搬家啦！<br>发表时间：2013-10-30
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_189.html"><img
+								src="admin/uploads/s1330919821_23051.jpg" width="92" height="72"
+								border="0"></a>
+							<p>
+								<a href="news_show_189.html" class="greenone"
+									style="font-size: 13px;" title="Fla-bingo已正式上线啦!">Apex-Tom已正式上线啦!</a><br>
+								Apex-Tom已正式上线啦!<br>发表时间：2012-03-28
 							</p>
 							<div style="clear: both;"></div>
 						</li>
 					</ul>
 				</div>
+				
 				<div class="button">
 					<a href="javascript:" id="news_next"><img
 						src="<%=path%>/img/gobotom.gif" width="17" height="17"
@@ -416,7 +386,7 @@
 				地址：南京市玄武区珠江路5号华利国际大厦2307室(赛格数码广场后门电梯上) 联系电话：025-83364670<br>
 				Copyright<font style="font-family: Arial">©</font>&nbsp;2013
 				Apex-Tom Workshop.All rights reserved.<br> 
-				苏ICP备 ???????号&nbsp;
+				苏ICP备 XXXXXXX号&nbsp;
 			</div>
 		</div>
 	</div>

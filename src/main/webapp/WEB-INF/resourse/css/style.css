@@ -2,7 +2,7 @@
 /* CSS Document */
 @import "common.css";
 .index_flash{width:960px;   margin:auto; height:200px;border: 5px;border-color: #123456}
-.leftlayout,.rightlayout{ float:left; width:330px; margin-top:19px;padding-top:54px;}
+.leftlayout,.rightlayout{ float:left; width:330px; margin-top:75px;padding-top:24px;}
 .leftlayout{ width:610px;  background-image:url(../img/index1.gif); background-repeat:no-repeat; margin-left:31px; _margin-left:18px; }
 .rightlayout{ background-image:url(../img/index2.gif); background-repeat:no-repeat; padding-left:20px; width:310px; background-position:30px 0px;}
 .leftlayout .sitetype{ width:300px; height:100px;  float:left; }
