@@ -9,6 +9,7 @@ String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getS
 <script type="text/javascript" src="<%=path%>/scripts/jquery.easyui.min.js"></script>
 <script type="text/javascript" src="<%=path%>/scripts/easyui-lang-zh_CN.js"></script>
 
+<script type="text/javascript" src="<%=path%>/scripts/jquery.js"></script>
 <script type="text/javascript" src="<%=path%>/scripts/jquery.dropdown.js"></script>
 <script type="text/javascript" src="<%=path%>/scripts/jquery.easing.js"></script>
 <script type="text/javascript" src="<%=path%>/scripts/common.function.js"></script>

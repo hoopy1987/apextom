@@ -16,10 +16,10 @@
 
 <link rel="shortcut icon" href="/img/apextom.ico" type="image/x-icon">
 
-<base href="<%=path %>" target="_self">
+<base href="<%=path%>" target="_self">
 
 <script type="text/javascript">
-	var old_cur = parseInt("2");
+	var old_cur = parseInt("1");
 	var cur = old_cur;
 	jQuery(document).ready(function() {
 		if (old_cur > 0) {
@@ -119,8 +119,7 @@
 																	width : 0
 																}, "slow");
 														jQuery('.kf_btn img')
-																.attr('src',
-																		'<%=path%>/img/kf_btn02.png')
+																.attr('src','<%=path%>/img/kf_btn02.png')
 													}
 												})
 							});
@@ -129,7 +128,7 @@
 			style="position: absolute; width: 122px; height: 54px; background-image: url(<%=path%>/img/index12.gif); z-index: 0; left: 1127px; top: 163px; background-position: initial initial; background-repeat: no-repeat no-repeat;"
 			id="smoth_block"></div>
 		<div class="header" id="nav_header" style="position: relative;">
-		
+
 			<!-- JiaThis Button BEGIN -->
 			<div id="ckepop" class="cate_1" parentvalue="1"
 				style="position: absolute; right: -23px; top: 50px; background-image: url(<%=path%>/img/fx_bj.png); width: 112px; height: 20px; padding-left: 60px; padding-top: 15px; display: none;">
@@ -145,14 +144,12 @@
 					class="jiathis_txt jtico jtico_taobao"></span></a>
 			</div>
 			<!-- JiaThis Button END -->
-			
+
 			<div class="logo">
-				<a href="http://www.bingoidea.net"><img
-					src="<%=path%>/img/logo.png" border="0"></a> <a
-					href="http://apextom.com" target="_blank" class="outlin"><img
-					src="<%=path%>/img/logo_btn.png" width="32" height="32"></a>
+				<a href="<%=path%>"><img src="<%=path%>/img/logo.png" border="0"
+					width="120px" height="120px"></a>
 			</div>
-			
+
 			<div class="contact">
 				<!-- 
 				<img src="<%=path%>/img/tel.gif">&nbsp;&nbsp;
@@ -160,9 +157,9 @@
 				<!-- WPA Button Begin -->
 
 				<!-- WPA Button END -->
-				<a id="fxbtn" href="javascript:"><img
-					src="<%=path%>/img/fx.gif" style="border: none;" alt="分享"></a>
-				 
+				<a id="fxbtn" href="javascript:"><img src="<%=path%>/img/fx.gif"
+					style="border: none;" alt="分享"></a>
+
 				<div
 					style="margin-top: 20px; padding-right: 10px; padding-left: 300px; display: none">
 					<div class="dropdown_contact">
@@ -175,18 +172,16 @@
 							style="color: #fff; text-decoration: none;">联系</a>
 					</div>
 				</div>
-				
+
 			</div>
 
 			<div class="all_link" id="nav">
-				<a href="http://www.bingoidea.net"
-					style="margin-left: 70px; _margin-left: 30px;" top="1">缤果首页<br><font>Home</font></a> 
-				<a href="about_us.html" top="2">关于我们<br><font>AboutUs</font></a> 
-				<a href="case.html" top="3">缤果案例<br><font>OurCase</font></a>
-				<a href="service.html" top="4">缤果服务<br><font>OurService</font></a>
-				<a href="contact_us.html" top="5">联系我们<br><font>ContactUs</font></a>
-				
-				<a href="#" top="6">联系我们<br><font>Flash</font></a>
+				<a href="<%=path%>" style="margin-left: 70px; _margin-left: 30px;"
+					top="1">首页<br> <font>Home</font></a> <a href="news.html"
+					top="2">最新动态<br> <font>News</font></a> <a href="service.html"
+					top="3">课程服务<br> <font>OurService</font></a> <a
+					href="service.html" top="4">资料下载<br> <font>DataDownload</font></a>
+				<a href="about_us.html" top="5">关于我们<br> <font>AboutUs</font></a>
 			</div>
 		</div>
 		<div
@@ -201,114 +196,227 @@
 			<div class="kf_info" style="width: 0px;">
 				<div style="padding-left: 8px;">
 					<h1>
-						<img src="<%=path%>/img/kf_phone.jpg" width="158" height="27">
+						<%-- 						<img src="<%=path%>/img/kf_phone.jpg" width="158" height="27"> --%>
 					</h1>
 					<p class="context">
 						<a href="tencent://message/?uin=&amp;Site=cherry&amp;Menu=yes">
-							<strong>Bingo.Jimmy</strong><br> Tel: 186-1682-7767
+							<strong>X老师</strong><br> Tel: xxx-xxxx-xxxx
 						</a>
-
-
 					</p>
 				</div>
 			</div>
 			<p class="kf_btn">
 				<img src="<%=path%>/img/kf_btn02.png" width="32" height="194">
 			</p>
-
-
-
 		</div>
 		<!--客服-->
-		<div class="content_top">
-			<div class="aboutus_left">
-				<script type="text/javascript">
-					var left = parseInt("2");
-					jQuery(document)
-							.ready(
-									function() {
-										jQuery('#left_nav a')
-												.each(
-														function() {
-															if (jQuery(this)
-																	.attr(
-																			'left') == left) {
-																jQuery(this)
-																		.css(
-																				'border-left',
-																				'#99cc00 10px solid');
-															}
-														});
-									});
-				</script>
-				<div id="left_nav">
-					<a class="one" href="opinion.html" left="1"></a> <a class="two"
-						href="about_us.html" left="2"
-						style="border-left-color: rgb(153, 204, 0); border-left-width: 10px; border-left-style: solid;"></a>
-					<a class="three" href="news_show.html" left="3"></a> <a
-						class="four" href="join_us.html" left="4"></a>
+
+
+		<div class="content_top" style="height: 620px; padding-top: 20px;">
+			<div class="index_flash">
+				<img src="<%=path%>/img/homepage-image1.jpg" style="border: none;" alt="分享">
+			</div>
+			
+			<div class="leftlayout">
+
+				<div class="sitetype">
+					<div>
+						<a><img src="admin/uploads/1269398230_831573.gif" width="72"
+							border="0"></a>
+					</div>
+					<div class="sitetype_text">
+						<span class="index_title"><a href="website_building_1.html">网站建设类型</a></span>
+						<h4>
+							<a href="website_building_1.html">宣传展示型网站 — 展示企业CI，提升企业整体形象
+								活动应用型网站 — 华丽...</a>
+						</h4>
+						<span class="index_more"><em><a
+								href="website_building_1.html">MORE</a></em></span>
+					</div>
 				</div>
+				<div class="sitetype">
+					<div>
+						<a><img src="admin/uploads/1269398296_877624.gif" width="72"
+							border="0"></a>
+					</div>
+					<div class="sitetype_text">
+						<span class="index_title"><a href="website_building_2.html">网站优化|网站推广</a></span>
+						<h4>
+							<a href="website_building_2.html">网站优化/网站推广就是指如何让更多人知道你的网站,
+								利用互联网进行宣传推广活动。 推广网站的形式多样...</a>
+						</h4>
+						<span class="index_more"><em><a
+								href="website_building_2.html">MORE</a></em></span>
+					</div>
+				</div>
+				<div class="sitetype">
+					<div>
+						<a><img src="admin/uploads/1269398351_90119.gif" width="72"
+							border="0"></a>
+					</div>
+					<div class="sitetype_text">
+						<span class="index_title"><a href="website_building_3.html">网站技术维护</a></span>
+						<h4>
+							<a href="website_building_3.html">缤果创意本着“一站式”服务的标准，不仅为您提供建站服务，并为您提供的专业高效...</a>
+						</h4>
+						<span class="index_more"><em><a
+								href="website_building_3.html">MORE</a></em></span>
+					</div>
+				</div>
+				<div class="sitetype">
+					<div>
+						<a><img src="admin/uploads/1269398374_684021.gif" width="72"
+							border="0"></a>
+					</div>
+					<div class="sitetype_text">
+						<span class="index_title"><a href="website_building_4.html">网站建设流程</a></span>
+						<h4>
+							<a href="website_building_4.html">客户提出网站建设申请 → 制定网站建设方案
+								→签订网站相关协议 → 网...</a>
+						</h4>
+						<span class="index_more"><em><a
+								href="website_building_4.html">MORE</a></em></span>
+					</div>
+				</div>
+
 			</div>
-			<div class="aboutus_right">
-				<p class="picone">
-					<span class="aboutus_font" style="color: #99cc00">&nbsp;&nbsp;&nbsp;“缤果创意”</span>隶属于上海<span
-						class="aboutus_font" style="color: #99cc01">思壤信息技术</span>有限公司。
-				</p>
-				<p class="pictwo">
-					<span class="aboutus_font" style="color: #ff8c00">&nbsp;&nbsp;&nbsp;“缤果创意”</span>BINGOIDEA专注于<a
-						class="aboutus_font" style="color: #ff8c00">网站建设</a>，依靠专业网站建设技术致力于系统化解决您的企业品牌在互联网上的统一性传播。从<a
-						class="aboutus_font" style="color: #ff8c00">网站咨询策划、界面设计、交互设计，线上营销策划到网站程序开发、网站视觉整合，</a>我们都提供适合您需求的一站式专业建站方案。
-				</p>
-				<p class="picthree">
-					<span style="color: #0099cc">&nbsp;&nbsp;&nbsp;“缤果创意”</span>BINGOIDEA是（缤纷、果实、创意、智慧）的象征。“缤果创意”致力于成为在创意产业中囊括<a>平面设计、网站设计、网络推广、专业品牌设计等服务的专业互联网技术服务提供商。我们奉行</a><a
-						class="aboutus_font" style="color: #0099cc">“<span
-						style="color: #0099cc">设</span>计彰显品质,创意改变生活”
-					</a>的宗旨，以准确的市场定位和客户的需求为目的，拥有着热情、细致、专注的高素质团队，更具魅力的是他们拥有非凡的创造力和无私的奉献精神。我们一直秉承国际化、品牌化的创作理念和规范专业的设计态度，创造力与专注度决定了我们能胜任一切挑战。
-				</p>
-				<p class="picfour">
-					<a class="aboutus_font" style="color: #376092">&nbsp;&nbsp;&nbsp;“缤果创意”
-					</a>是朝气蓬勃、积极创造的<a class="aboutus_font" style="color: #376092">风向</a>；<br>
-					&nbsp;&nbsp;&nbsp;<a class="aboutus_font" style="color: #376092">“缤果创意”
-					</a>将是专业化、规范化的<a class="aboutus_font" style="color: #376092">标尺</a>；<br>
-					&nbsp;&nbsp;&nbsp;<a class="aboutus_font" style="color: #376092">“缤果创意”
-					</a>会是互联网技术服务领域的<a class="aboutus_font" style="color: #376092">典范</a>。
-				</p>
+			<div class="rightlayout">
+				<div id="news_player"
+					style="height: 242px; overflow: hidden; visibility: visible; position: relative; z-index: 2; left: 0px;">
+					<ul
+						style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 1089px; top: -363px;">
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_191.html"><img
+								src="admin/uploads/s1332469984_13648.gif" width="92" height="72"
+								border="0"></a>
+							<p>
+								<a href="news_show_191.html" class="greenone"
+									style="font-size: 13px;" title="缤果创意与上海德奈福洗染设备有限公司建立合作关系">缤果创意与上海德奈福洗染设备有限公司建立合作...</a><br>
+								将为德奈福提供网站建设<br>发表时间：2012-03-20
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_190.html"><img
+								src="admin/uploads/s1332231690_449040.gif" width="92"
+								height="72" border="0"></a>
+							<p>
+								<a href="news_show_190.html" class="greenone"
+									style="font-size: 13px;" title="缤果创意与上海贝汉建筑设计有限公司建立合作关系">缤果创意与上海贝汉建筑设计有限公司建立合作关...</a><br>
+								将为贝汉建筑提供网站建设<br>发表时间：2012-03-19
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_193.html"><img
+								src="admin/uploads/s1337677657_814396.jpg" width="92"
+								height="72" border="0"></a>
+							<p>
+								<a href="news_show_193.html" class="greenone"
+									style="font-size: 13px;" title="缤果创意搬家啦！">缤果创意搬家啦！</a><br>
+								缤果创意搬家啦！<br>发表时间：2012-05-22
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_189.html"><img
+								src="admin/uploads/s1330919821_23051.jpg" width="92" height="72"
+								border="0"></a>
+							<p>
+								<a href="news_show_189.html" class="greenone"
+									style="font-size: 13px;" title="Fla-bingo已正式上线啦!">Fla-bingo已正式上线啦!</a><br>
+								Fla-bingo已正式上线啦!<br>发表时间：2012-03-28
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_192.html"><img
+								src="admin/uploads/s1332470723_900187.gif" width="92"
+								height="72" border="0"></a>
+							<p>
+								<a href="news_show_192.html" class="greenone"
+									style="font-size: 13px;" title="缤果创意与纽斯凯威(加拿大)国际顾问有限公司建立合作关系">缤果创意与纽斯凯威(加拿大)国际顾问有限公司...</a><br>
+								将为纽斯凯威提供网站建设<br>发表时间：2012-03-21
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_191.html"><img
+								src="admin/uploads/s1332469984_13648.gif" width="92" height="72"
+								border="0"></a>
+							<p>
+								<a href="news_show_191.html" class="greenone"
+									style="font-size: 13px;" title="缤果创意与上海德奈福洗染设备有限公司建立合作关系">缤果创意与上海德奈福洗染设备有限公司建立合作...</a><br>
+								将为德奈福提供网站建设<br>发表时间：2012-03-20
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_190.html"><img
+								src="admin/uploads/s1332231690_449040.gif" width="92"
+								height="72" border="0"></a>
+							<p>
+								<a href="news_show_190.html" class="greenone"
+									style="font-size: 13px;" title="缤果创意与上海贝汉建筑设计有限公司建立合作关系">缤果创意与上海贝汉建筑设计有限公司建立合作关...</a><br>
+								将为贝汉建筑提供网站建设<br>发表时间：2012-03-19
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_193.html"><img
+								src="admin/uploads/s1337677657_814396.jpg" width="92"
+								height="72" border="0"></a>
+							<p>
+								<a href="news_show_193.html" class="greenone"
+									style="font-size: 13px;" title="缤果创意搬家啦！">缤果创意搬家啦！</a><br>
+								缤果创意搬家啦！<br>发表时间：2012-05-22
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="detail_right_content"
+							style="overflow: hidden; float: none; width: 290px; height: 100px;">
+							<a href="news_show_189.html"><img
+								src="admin/uploads/s1330919821_23051.jpg" width="92" height="72"
+								border="0"></a>
+							<p>
+								<a href="news_show_189.html" class="greenone"
+									style="font-size: 13px;" title="Fla-bingo已正式上线啦!">Fla-bingo已正式上线啦!</a><br>
+								Fla-bingo已正式上线啦!<br>发表时间：2012-03-28
+							</p>
+							<div style="clear: both;"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="button">
+					<a href="javascript:" id="news_next"><img
+						src="<%=path%>/img/gobotom.gif" width="17" height="17"
+						border="0"></a> <a href="javascript:" id="news_prev"><img
+						src="<%=path%>/img/gotop.gif" width="17" height="17" border="0"></a>
+				</div>
+				<div></div>
 			</div>
-			<div style="clear: both;" class="aboutusbj"></div>
 		</div>
 		<div class="content_bot"></div>
-		﻿
+		﻿ ﻿
 		<div class="footer">
-			<a href="http://www.bingoidea.net"
-				style="margin-left: 200px; _margin-left: 100px;" class="footermenu">Home</a>
-			<a href="http://www.bingoidea.net/blog" class="footermenu">Blog</a> <a
-				href="contact_us.html" class="footermenu">ContactUS</a> <a
-				href="sitemap.html" class="footermenu">SiteMap</a>
+			<a href="<%=path%>" style="margin-left: 200px; _margin-left: 100px;"
+				class="footermenu">Home</a> <a href="<%=path%>/blog"
+				class="footermenu">Blog</a> <a href="contact_us.html"
+				class="footermenu">ContactUS</a> <a href="sitemap.html"
+				class="footermenu">SiteMap</a>
 			<div>
-				<div style="padding: 0px;">
-					友情链接:&nbsp;<a href="http://www.bingoidea.net/" target="_blank"
-						style="margin-right: 10px;">上海网站建设</a><a
-						href="http://www.bingoidea.net/" target="_blank"
-						style="margin-right: 10px;">网页设计</a><a
-						href="http://www.bingoidea.net/" target="_blank"
-						style="margin-right: 10px;">品牌网站设计</a><a
-						href="http://www.bingoidea.net/" target="_blank"
-						style="margin-right: 10px;">高端网站建设</a>
-				</div>
-				地址：上海市徐汇区石龙路345弄23-27号A座208 联系电话：+86-21-64681909<br> Copyright<font
-					style="font-family: Arial">©</font>&nbsp;2009上海思壤信息技术有限公司 版权所有<br>
-				<a href="http://www.miibeian.gov.cn" target="_blank"
-					rel="”nofollow”">沪ICP备09089012号</a>&nbsp;
-				<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7697c00db8641c0aa939f12b95728799' type='text/javascript'%3E%3C/script%3E"));
-</script>
-				<script
-					src=" http://hm.baidu.com/h.js?7697c00db8641c0aa939f12b95728799"
-					type="text/javascript"></script>
-				<a
-					href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120315163548399"><img
-					src="<%=path%>/img/icon.gif" width="47" height="47" border="0"></a>
+				地址：南京市玄武区珠江路5号华利国际大厦2307室(赛格数码广场后门电梯上) 联系电话：025-83364670<br>
+				Copyright<font style="font-family: Arial">©</font>&nbsp;2013
+				Apex-Tom Workshop.All rights reserved.<br> 
+				苏ICP备 ???????号&nbsp;
 			</div>
 		</div>
 	</div>

@@ -7,7 +7,7 @@ ul li{ margin:0px; padding:0px;}
 .all{ width:1003px; margin:auto; padding-bottom:50px; _width:995px;}
 .header{height:205px; padding-top:24px;}
 .content_top{ background-repeat:repeat-y;  background-image:url(../img/bj1.png); _background-image:none; _background-color:#FFF; padding-bottom:0px;}
-.content_bot{ background-image:url(../img/bottom.png); width:1003px; height:9px; _background-image:none;}
+.content_bot{ background-image:url(../img/bottom.png); width:1003px; height:1px; _background-image:none;}
 .global_link{ background-color:#f2f2f2; height:55px; width:960px; margin:auto; text-align:center; padding-top:10px;}
 
 
