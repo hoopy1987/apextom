@@ -24,10 +24,9 @@
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/com/alibaba/druid/0.2.26/druid-0.2.26.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/com/alibaba/fastjson/1.1.36/fastjson-1.1.36.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/com/caucho/hessian/4.0.33/hessian-4.0.33.jar</webClassPathEntry>
-        <webClassPathEntry>C:/Users/Administrator/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar</webClassPathEntry>
+        <webClassPathEntry>C:/Users/Administrator/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/commons-fileupload/commons-fileupload/1.3/commons-fileupload-1.3.jar</webClassPathEntry>
-        <webClassPathEntry>C:/Users/Administrator/.m2/repository/commons-httpclient/commons-httpclient/3.0.1/commons-httpclient-3.0.1.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar</webClassPathEntry>
         <webClassPathEntry>C:/Users/Administrator/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar</webClassPathEntry>

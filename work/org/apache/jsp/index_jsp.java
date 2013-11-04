@@ -67,22 +67,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 String basePath = request.getContextPath();
 String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+basePath;
 
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
       out.write("\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"");
-      out.print(path);
-      out.write("/scripts/themes/default/easyui.css\">\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"");
-      out.print(path);
-      out.write("/scripts/themes/icon.css\">\n");
-      out.write("<script type=\"text/javascript\" src=\"");
-      out.print(path);
-      out.write("/scripts/jquery.min.js\"></script>\n");
-      out.write("<script type=\"text/javascript\" src=\"");
-      out.print(path);
-      out.write("/scripts/jquery.easyui.min.js\"></script>\n");
-      out.write("<script type=\"text/javascript\" src=\"");
-      out.print(path);
-      out.write("/scripts/easyui-lang-zh_CN.js\"></script>\n");
       out.write("\n");
       out.write("<script type=\"text/javascript\" src=\"");
       out.print(path);

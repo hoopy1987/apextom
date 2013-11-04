@@ -71,6 +71,15 @@ public abstract class BaseController {
 		httpServletRequest.getSession().setAttribute(sessionKey, valueObj);
 	}
 	
+	/**
+	 * 移除session数据
+	 * @param httpServletRequest
+	 * @param sessionKey
+	 */
+	protected void removeSessionAttribute(HttpServletRequest httpServletRequest,String sessionKey){
+		httpServletRequest.getSession().removeAttribute(sessionKey);
+	}
+	
 
 	/**
 	 * 分页起始行

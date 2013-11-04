@@ -38,7 +38,7 @@ public class SystemInterceptor extends HandlerInterceptorAdapter {
         response.setContentType("text/html;charset=UTF-8");  
   
         // 后台session控制  
-        String[] noFilters = new String[] { "login", "/modify/pwd","/css","/img","/scripts" };  
+        String[] noFilters = new String[] { "login","/css","/img","/scripts" };  
         String uri = request.getRequestURI();  
   
         if (uri.indexOf("zhzs") != -1) {  

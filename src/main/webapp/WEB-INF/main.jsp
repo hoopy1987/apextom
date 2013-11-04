@@ -5,8 +5,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>综合治税信息管理系统</title>
-<%@ include file="/base.jsp"%> 
+<title>Apextom</title>
+<%@ include file="/baseAdmin.jsp"%> 
 <style type="text/css">
 <!--
 body,td,th {
@@ -39,7 +39,7 @@ $(function(){
 				pre.text(data);
 				$(this).remove();
 			});
-			prettyPrint();
+			//prettyPrint();
 		}
 	});
 	
@@ -49,7 +49,8 @@ $(function(){
 			//alert(node.text + node.attributes.url);
 			
 			if(node.attributes.url != ""){
-				open1(node.text,node.attributes.url);
+				var s="<%=path%>"+node.attributes.url;
+				open1(node.text,s);
 			}
 		}
 	});
@@ -57,12 +58,13 @@ $(function(){
 
 // open
 function open1(plugin,url){
+	var url='<iframe scrolling="yes" frameborder="0"  src='+url+' style="width:100%;height:100%;"></iframe>'
 	if ($('#tt').tabs('exists',plugin)){
 		$('#tt').tabs('select', plugin);
 	} else {
 		$('#tt').tabs('add',{
 			title:plugin,
-			href: url,
+			content: url,
 			closable:true
 			/* extractor:function(data){
 				data = $.fn.panel.defaults.extractor(data);
@@ -71,6 +73,7 @@ function open1(plugin,url){
 				tmp.remove();
 				return data;
 			} */
+
 		});
 	}
 }
@@ -103,6 +106,20 @@ function MM_swapImage() { //v3.0
 function openrili(){
 	window.showModalDialog("<%=path%>/public/rili.htm",window,"dialogWidth:600px;status:no;dialogHeight:500px");
 }
+
+function goquest(){
+	$.messager.confirm('提示', '您确定要退出系统吗?', function(r){
+        if (r){
+        	$.ajax({ 
+        		url: '<%=path%>/logout', 
+        		success: function(){
+                	window.location = "<%=path%>";
+            	}
+        	});
+        }
+    });
+
+}
 //-->
 </script>
 </head>
@@ -123,8 +140,9 @@ function openrili(){
 											background="img/backggroup1.gif">
 											<tr>
 
-												<td width="499"><img src="img/bt.jpg" width="499"
-													height="69" /></td>
+												<td width="499">
+													<img src="img/bt.jpg" width="499" height="69" />
+												</td>
 											</tr>
 										</table>
 										<table width="100%" height="29" border="0" cellpadding="0"
@@ -146,7 +164,7 @@ function openrili(){
 														border="0" cellspacing="0" cellpadding="0">
 														<tr>
 															<td align="center" background="img/top_bg1.gif"><span
-																class="STYLE2"> 【${USERINFO.userdm}】【${USERINFO.username}】${USERINFO.jgmc}</span></td>
+																class="STYLE2"> 【${USERINFO.username}】</span></td>
 															<td width="48"><img src="img/jiao.gif" width="48"
 																height="26" /></td>
 														</tr>
@@ -173,22 +191,13 @@ function openrili(){
 																			onmouseover="MM_swapImage('Image10','','img/index1_04.gif',1)"><img
 																				src="img/index2_04.gif" name="Image10" width="55"
 																				height="72" border="0" id="Image10" /></a></td>
-																		<td><a title='打开公告'
-																			onmouseout="MM_swapImgRestore()"
-																			onmouseover="MM_swapImage('Image11','','img/index1_05.gif',1)"><img
-																				src="img/index2_05.gif" name="Image11" width="59"
-																				height="72" border="0" id="Image11" /></a></td>
-																		<td><a title='打开帮助'
-																			onmouseout="MM_swapImgRestore()"
-																			onmouseover="MM_swapImage('Image12','','img/index1_06.gif',1)"><img
-																				src="img/index2_06.gif" name="Image12" width="57"
-																				height="72" border="0" id="Image12" /></a></td>
 																		<td><a href="javascript:goquest()" title='退出系统'
 																			onmouseout="MM_swapImgRestore()"
 																			onmouseover="MM_swapImage('Image13','','img/index1_07.gif',1)"><img
 																				src="img/index2_07.gif" name="Image13" width="66"
 																				height="72" border="0" id="Image13" /></a></td>
-																		<!-- javascript:openwin2('\gg.html');     javascript:gohelp()-->
+																		<td width="66"></td>
+																		<td width="66"></td>
 																	</tr>
 																</table></td>
 														</tr>
@@ -208,8 +217,11 @@ function openrili(){
 	<!-- 菜单区域 -->
 	<div region="west" border="false" split="true" title="系统功能"
 		style="width: 250px; padding: 5px;">
-		<ul id="tree" class="easyui-tree" data-options="url:'<%=path%>/menu/${USERINFO.userdm}'">
+
+
+		<ul id="tree" class="easyui-tree" data-options="url:'<%=path%>/menu'">
 			
+
 		</ul>
 	</div>
 	
