@@ -14,7 +14,7 @@
 <meta name="description"
 	content="APEX,TOM,APEXTOM,WORKSHOP,南京艾派克斯,教育,遥遥领先行业对手!">
 
-<link rel="shortcut icon" href="/img/apextom.ico" type="image/x-icon">
+<link rel="shortcut icon" href="<%=path%>/img/apextom.ico" type="image/x-icon">
 
 <base href="<%=path%>" target="_self">
 

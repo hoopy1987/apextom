@@ -1,7 +1,6 @@
 package com.apextom.service.impl;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,10 +18,9 @@ import com.apextom.util.DigestUtil;
 @Service("userService")
 public class UserServiceImpl implements UserService {
 	
-	private static Logger logger = Logger.getLogger(UserServiceImpl.class);
-	
 	@Autowired
 	private UserDao userDao;
+	
 	
 	private final String ERROR_NOTMATCH = "用户名和密码不匹配！";
 	
@@ -31,7 +29,7 @@ public class UserServiceImpl implements UserService {
 	private final String ERROR_ILLEGAL = "参数非法！";
 
 	/* (non-Javadoc)
-	 * @see com.ezizoo.zhzs.service.UserService#checkLogin(java.lang.String, java.lang.String)
+	 * @see com.apextom.service.UserService#checkLogin(java.lang.String, java.lang.String)
 	 */
 	public UserModel checkLogin(String userdm, String password) throws UnMacthingDataException {
 		// 二次校验减少数据库开销

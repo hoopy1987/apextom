@@ -15,7 +15,7 @@
 		<!-- mapper和resultmap配置路径 -->
 		<property name="mapperLocations">
 			<list>
-				<!--表示在com.ezizoo.*.resultmap包或以下所有目录中，以-resultmap.xml结尾所有文件 -->
+				<!--表示在*.resultmap包或以下所有目录中，以-resultmap.xml结尾所有文件 -->
 				<value>classpath:resultmap/*-resultmap.xml</value>
 			</list>
 		</property>

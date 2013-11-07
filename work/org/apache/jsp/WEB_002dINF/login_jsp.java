@@ -137,9 +137,7 @@ String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getS
       out.write("\tsuccess : function(data) {\n");
       out.write("\t\tvar data = eval('(' + data + ')');\n");
       out.write("\t\tvar message = 'success！';\n");
-      out.write("\t\t\n");
-      out.write("\t\talert(data.resStatus);\n");
-      out.write("\t\t\n");
+      out.write("\t\t//alert(data.resStatus);\n");
       out.write("\t\tif (data.resStatus != 'SUCCESS') {\n");
       out.write("\t\t\tmessage = 'failed：[error code:' + data.errCode\n");
       out.write("\t\t\t\t+ ']' + data.errMess;\n");

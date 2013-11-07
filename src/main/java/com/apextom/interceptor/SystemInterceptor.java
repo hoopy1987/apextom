@@ -41,7 +41,7 @@ public class SystemInterceptor extends HandlerInterceptorAdapter {
         String[] noFilters = new String[] { "login","/css","/img","/scripts" };  
         String uri = request.getRequestURI();  
   
-        if (uri.indexOf("zhzs") != -1) {  
+        if (uri.indexOf(".html") == -1) {  
             boolean beFilter = true;  
             for (String s : noFilters) {  
                 if (uri.indexOf(s) != -1) {  
@@ -58,7 +58,7 @@ public class SystemInterceptor extends HandlerInterceptorAdapter {
                     StringBuilder builder = new StringBuilder();  
                     builder.append("<script type=\"text/javascript\" charset=\"UTF-8\">");  
                     builder.append("alert(\"页面过期，请重新登录\");");  
-                    builder.append("window.top.location.href=\"");  
+                    builder.append("window.location=\"index.html\"");  
                     builder.append(";</script>");  
                     out.print(builder.toString());  
                     out.close();  

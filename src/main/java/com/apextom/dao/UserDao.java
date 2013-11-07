@@ -24,12 +24,4 @@ public class UserDao {
 		return userMapper.getUserInfoByUserdm(userdm);
 	}
 	
-	/**
-	 * 获取全部用户信息
-	 * @return
-	 */
-	public List<UserModel> getAllUserInfos(){
-		return userMapper.getAllUserInfos();
-	}
-	
 }

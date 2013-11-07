@@ -29,6 +29,7 @@ public class DigestUtil {
 		
 		String str = encoder.encodeToString(MessageDigest.getInstance(DIGESTTYPE_MD5).digest(
 				message.getBytes()));
+		
 		Pattern p = Pattern.compile("\\s*|\t|\r|\n");
 		Matcher m = p.matcher(str);
 		

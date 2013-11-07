@@ -107,7 +107,9 @@ String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getS
       out.write("<meta name=\"description\"\r\n");
       out.write("\tcontent=\"APEX,TOM,APEXTOM,WORKSHOP,南京艾派克斯,教育,遥遥领先行业对手!\">\r\n");
       out.write("\r\n");
-      out.write("<link rel=\"shortcut icon\" href=\"/img/apextom.ico\" type=\"image/x-icon\">\r\n");
+      out.write("<link rel=\"shortcut icon\" href=\"");
+      out.print(path);
+      out.write("/img/apextom.ico\" type=\"image/x-icon\">\r\n");
       out.write("\r\n");
       out.write("<base href=\"");
       out.print(path);
