@@ -9,23 +9,25 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.URL;
 
+import org.apache.log4j.Logger;
+import org.springframework.stereotype.Component;
+
 /**
- * 网页静态化
- * 
+ * 网页静态化 -- nginx指向目录
  * @author hoopy
- * 
  */
+@Component
 public class WebStatic {
+	
+	private static Logger logger = Logger.getLogger(WebStatic.class);
 
 	/**
-	 * 
-	 * @param page
-	 *            存放静态页面的本地文件路径
-	 * @param url_addr
-	 *            所要生成的静态页的URL地址
-	 * @return
+	 * 生成静态页面
+	 * @param page 存放静态页面的本地文件路径
+	 * @param url_addr 所要生成的静态页的URL地址
+	 * @return 生成状态
 	 */
-	public static boolean PrintPage(String page, String url_addr) {
+	public boolean CreateHtml(String page, String url_addr) {
 		URL url;
 		String rLine = null;
 		PrintWriter fileOut = null;
@@ -51,11 +53,10 @@ public class WebStatic {
 			url = null;
 			return true;
 		} catch (IOException e) {
-			System.out.println("error: " + e.getMessage());
-			e.printStackTrace();
+			logger.error("error: " + e.getMessage());
 			return false;
 		} catch (Exception es) {
-			System.out.println(es.getMessage());
+			logger.error("error: " + es.getMessage());
 			return false;
 		} finally {// 关闭资源
 			fileOut.close();
@@ -67,10 +68,6 @@ public class WebStatic {
 			}
 		}
 
-	}
-
-	public static void main(String[] args) {
-		PrintPage("c:/sina.html", "http://localhost:8080/apextom/");
 	}
 
 }
