@@ -1,6 +1,7 @@
 package com.apextom.webstatic;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,7 +28,12 @@ public class WebStatic {
 	 * @param url_addr 所要生成的静态页的URL地址
 	 * @return 生成状态
 	 */
-	public boolean CreateHtml(String page, String url_addr) {
+	public boolean CreateHtml(String dir,String page, String url_addr) {
+		File file = new File(dir);
+		if(!file.exists()){
+			file.mkdirs();
+		}
+		
 		URL url;
 		String rLine = null;
 		PrintWriter fileOut = null;

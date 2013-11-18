@@ -1,21 +1,22 @@
 package com.apextom.service;
 
-import java.util.List;
-
-import com.apextom.domain.MenuTreeModel;
 
 /**
- * 功能菜单树服务接口
- * 
+ * 网页静态化服务
+ *  
  * @author lys
  *
  */
 public interface WebStaticService {
 	
 	/**
-	 * 根据权限查询功能菜单树
-	 * @return List<MenuNode>
+	 * 初始化所有栏目的静态页面
 	 */
-	public List<MenuTreeModel> queryMenuTreeByRight(String right);
+	public void initWebStatic();
+	
+	/**
+	 * 将某页面静态化（更新页面数据时使用）
+	 */
+	public void doWebStatic(String ...pages);
 	
 }

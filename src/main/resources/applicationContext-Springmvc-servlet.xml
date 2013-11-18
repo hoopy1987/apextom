@@ -20,13 +20,6 @@
     	<bean class="com.apextom.interceptor.SystemInterceptor" />  
 	</mvc:interceptors> 
 
-	<mvc:resources location="/WEB-INF/resourse/js/" mapping="/scripts/**" />
-	<mvc:resources location="/WEB-INF/resourse/css/" mapping="/css/**" />
-	<mvc:resources location="/WEB-INF/resourse/images/" mapping="/img/**" />
-	<mvc:resources location="/WEB-INF/resourse/swf/" mapping="/swf/**" />
-	<mvc:resources location="/WEB-INF/resourse/xml/" mapping="/xml/**" />
-	<mvc:resources location="/WEB-INF/resourse/json/" mapping="/json/**" />
-
 	<!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->
 	<bean id="fastJsonHttpMessageConverter"
 		class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">

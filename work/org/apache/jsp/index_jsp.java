@@ -64,14 +64,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<title>南京艾派克斯TOM工作室 APEXTOM-WORKSHOP</title>\r\n");
       out.write('\n');
 
-String basePath = request.getContextPath();
-String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+basePath;
+	String basePath = request.getContextPath();
+	String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+basePath;
+	path="";
 
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
       out.write("\n");
       out.write("\n");
       out.write("<script type=\"text/javascript\" src=\"");
