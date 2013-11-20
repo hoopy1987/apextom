@@ -38,7 +38,7 @@ public class SystemInterceptor extends HandlerInterceptorAdapter {
         response.setContentType("text/html;charset=UTF-8");  
   
         // 后台session控制  
-        String[] noFilters = new String[] { "login","/css","/img","/scripts" };  
+        String[] noFilters = new String[] { "tologin","login","/css","/img","/scripts" };  
         String uri = request.getRequestURI();  
   
         if (uri.indexOf(".html") == -1) {  
@@ -51,6 +51,12 @@ public class SystemInterceptor extends HandlerInterceptorAdapter {
             }  
             if (beFilter) {  
                 Object obj = request.getSession().getAttribute(BaseController.SESSION_USERINFO);  
+                
+             // 添加日志  
+            	if(logger.isDebugEnabled()){
+            		logger.debug(request.getRemoteHost() + " visit :" + uri);
+            	}
+            	
                 if (null == obj) {  
   
                     // 未登录  
@@ -64,10 +70,6 @@ public class SystemInterceptor extends HandlerInterceptorAdapter {
                     out.close();  
                     return false;  
                 } else {  
-                    // 添加日志  
-                	if(logger.isDebugEnabled()){
-                		logger.debug(request.getRemoteHost() + " visit :" + uri);
-                	}
 //                    String operateContent = Constants.operateContent(uri);  
 //                    if (null != operateContent) {  
 //                        String url = uri.substring(uri.indexOf("background"));  

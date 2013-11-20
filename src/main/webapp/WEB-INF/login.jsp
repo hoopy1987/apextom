@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>登陆</title>
 <%@ include file="/baseAdmin.jsp"%>
+<link rel="stylesheet" type="text/css" href="<%=path%>/css/login.css">
 <script type="text/javascript">
 $(function(){
 // 登陆

@@ -64,8 +64,8 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<title>登陆</title>\n");
       out.write('\n');
 
-String basePath = request.getContextPath();
-String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+basePath;
+	String basePath = request.getContextPath();
+	String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+basePath;
 
       out.write("\n");
       out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"");
@@ -82,21 +82,11 @@ String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getS
       out.write("/scripts/jquery.easyui.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"");
       out.print(path);
-      out.write("/scripts/easyui-lang-zh_CN.js\"></script>\n");
+      out.write("/scripts/easyui-lang-zh_CN.js\"></script>");
       out.write("\n");
       out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"");
       out.print(path);
       out.write("/css/login.css\">\n");
-      out.write("\n");
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write("\n");
       out.write("<script type=\"text/javascript\">\n");
       out.write("$(function(){\n");
       out.write("// 登陆\n");

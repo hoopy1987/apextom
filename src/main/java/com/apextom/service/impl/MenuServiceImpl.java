@@ -26,6 +26,7 @@ public class MenuServiceImpl implements MenuService {
 	
 	private final String NORMAL_NODE_TYPE = "0";
 	private final String CLASS_NODE_TYPE = "1";
+	private final String DOWNLOAD_NODE_TYPE = "2";
 	
 	@Autowired
 	private MenuDao menuDao;
@@ -34,6 +35,8 @@ public class MenuServiceImpl implements MenuService {
 		// List<MenuTreeModel> menuList = new ArrayList<MenuTreeModel>(); 如果需要导航栏抬头
 		// 栏目类型（0：常规栏目，1：课程类）
 		List<ProjectsModel> projectsModelNormalList = menuDao.queryMenuTreeByPtype(NORMAL_NODE_TYPE);
+		List<ProjectsModel> projectsModelDownloadList = menuDao.queryMenuTreeByPtype(DOWNLOAD_NODE_TYPE);
+		projectsModelNormalList.addAll(projectsModelDownloadList);
 		
 		List<MenuTreeModel> menuNormalList = new ArrayList<MenuTreeModel>();
 		MenuTreeModel menuTreeModel = null;

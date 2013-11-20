@@ -66,7 +66,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 	String basePath = request.getContextPath();
 	String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+basePath;
-	path="";
+	path=".";
 
       out.write("\n");
       out.write("\n");

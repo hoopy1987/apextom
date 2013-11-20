@@ -19,6 +19,13 @@
 	<mvc:interceptors>  
     	<bean class="com.apextom.interceptor.SystemInterceptor" />  
 	</mvc:interceptors> 
+	
+	<mvc:resources location="/scripts/" mapping="/scripts/**" />
+	<mvc:resources location="/css/" mapping="/css/**" />
+	<mvc:resources location="/img/" mapping="/img/**" />
+	<mvc:resources location="/swf/" mapping="/swf/**" />
+	<mvc:resources location="/xml/" mapping="/xml/**" />
+	<mvc:resources location="/json/" mapping="/json/**" />
 
 	<!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->
 	<bean id="fastJsonHttpMessageConverter"

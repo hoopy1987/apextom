@@ -64,8 +64,8 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<title>Apextom</title>\n");
       out.write('\n');
 
-String basePath = request.getContextPath();
-String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+basePath;
+	String basePath = request.getContextPath();
+	String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+basePath;
 
       out.write("\n");
       out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"");
@@ -82,20 +82,7 @@ String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getS
       out.write("/scripts/jquery.easyui.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"");
       out.print(path);
-      out.write("/scripts/easyui-lang-zh_CN.js\"></script>\n");
-      out.write("\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"");
-      out.print(path);
-      out.write("/css/login.css\">\n");
-      out.write("\n");
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
-      out.write('\n');
+      out.write("/scripts/easyui-lang-zh_CN.js\"></script>");
       out.write(" \n");
       out.write("<style type=\"text/css\">\n");
       out.write("<!--\n");
@@ -139,10 +126,14 @@ String  path= request.getScheme()+"://"+request.getServerName()+":"+request.getS
       out.write("\t\t\t//alert(node.text + node.attributes.url);\n");
       out.write("\t\t\t\n");
       out.write("\t\t\tif(node.attributes.url != \"\"){\n");
-      out.write("\t\t\t\tvar s=\"");
+      out.write("\t\t\t\tvar id = node.id;\n");
+      out.write("\t\t\t\tvar ptype = node.attributes.ptype;\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\tvar url = '");
       out.print(path);
-      out.write("\"+node.attributes.url;\n");
-      out.write("\t\t\t\topen1(node.text,s);\n");
+      out.write("/articlelist/ptype/' + ptype + '/aid/' + id;\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\topen1(node.text,url);\n");
       out.write("\t\t\t}\n");
       out.write("\t\t}\n");
       out.write("\t});\n");

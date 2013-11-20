@@ -49,8 +49,12 @@ $(function(){
 			//alert(node.text + node.attributes.url);
 			
 			if(node.attributes.url != ""){
-				var s="<%=path%>"+node.attributes.url;
-				open1(node.text,s);
+				var id = node.id;
+				var ptype = node.attributes.ptype;
+				
+				var url = '<%=path%>/articlelist/ptype/' + ptype + '/aid/' + id;
+				
+				open1(node.text,url);
 			}
 		}
 	});
