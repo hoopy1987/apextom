@@ -38,10 +38,12 @@ public class SystemInterceptor extends HandlerInterceptorAdapter {
         response.setContentType("text/html;charset=UTF-8");  
   
         // 后台session控制  
-        String[] noFilters = new String[] { "tologin","login","/css","/img","/scripts" };  
+        String[] noFilters = new String[] { "tologin","login","index","/css","/img","/scripts" };  
         String uri = request.getRequestURI();  
-  
-        if (uri.indexOf(".html") == -1) {  
+
+        if (uri.indexOf(".html") == -1 
+        		&& !"/apextom/".equals(uri)
+        		&& !"/".equals(uri)) {  
             boolean beFilter = true;  
             for (String s : noFilters) {  
                 if (uri.indexOf(s) != -1) {  

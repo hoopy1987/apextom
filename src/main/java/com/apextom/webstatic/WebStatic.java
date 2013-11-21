@@ -13,6 +13,8 @@ import java.net.URL;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
+import com.apextom.util.PathUtil;
+
 /**
  * 网页静态化 -- nginx指向目录
  * @author hoopy

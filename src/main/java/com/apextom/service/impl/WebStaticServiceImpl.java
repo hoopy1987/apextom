@@ -25,7 +25,7 @@ public class WebStaticServiceImpl implements WebStaticService {
 	public void initWebStatic() {
 		logger.info(baseUrl + baseDir + "------------------------------------");
 		String[] pageList = {
-				""
+				"index"
 		};
 		doWebStatic(pageList);
 	}
@@ -38,10 +38,7 @@ public class WebStaticServiceImpl implements WebStaticService {
 	}
 	
 	private void webStatic(String page){
-		String htmlName = "";
-		if("".equals(page)){
-			htmlName = "index.html";
-		}
+		String htmlName = page + ".html";
 		webStatic.CreateHtml(baseDir,baseDir + htmlName, baseUrl + page);
 	}
 

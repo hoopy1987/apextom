@@ -27,6 +27,11 @@ public class ArticleController extends BaseController {
 	
 	private static Logger logger = Logger.getLogger(ArticleController.class);
 	
+	@RequestMapping(value = "/index" )
+	public String index(){
+		return "index";
+	}
+	
 	/**
 	 * 各类型首页
 	 * 
