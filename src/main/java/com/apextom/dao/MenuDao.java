@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.apextom.domain.ProjectsModel;
+import com.apextom.domain.MenuTreeModel;
 import com.apextom.mapper.MenuMapper;
 
 @Repository
@@ -20,8 +20,8 @@ public class MenuDao {
 	 * @param ptype
 	 * @return List<ProjectsModel>
 	 */
-	public List<ProjectsModel> queryMenuTreeByPtype(String ptype){
-		return menuMapper.queryMenuTreeByPtype(ptype);
+	public List<MenuTreeModel> queryMenuTree(int pid){
+		return menuMapper.queryMenuTree(pid);
 	}
 	
 }

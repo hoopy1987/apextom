@@ -1,5 +1,6 @@
 package com.apextom.domain;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -18,9 +19,9 @@ public class MenuTreeModel extends BaseObj{
 	
 	private static final long serialVersionUID = 1L;
 
-	private String id = "";
+	private Integer id;
 	
-	private String text = "";
+	private String text;
 	
 	private String iconCls;
 	
@@ -30,19 +31,13 @@ public class MenuTreeModel extends BaseObj{
 	
 	private String target;
 	
-	private String pid;
+	private String url;
 	
-	private Map<String,String> attributes;
+	private Integer pid;
+	
+	private Map<String,String> attributes = new HashMap<String,String>();
 	
 	private List<MenuTreeModel> children;
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
 
 	public String getText() {
 		return text;
@@ -100,12 +95,28 @@ public class MenuTreeModel extends BaseObj{
 		this.children = children;
 	}
 
-	public String getPid() {
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Integer getPid() {
 		return pid;
 	}
 
-	public void setPid(String pid) {
+	public void setPid(Integer pid) {
 		this.pid = pid;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	
 }

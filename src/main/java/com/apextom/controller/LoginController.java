@@ -30,6 +30,12 @@ public class LoginController extends BaseController {
 	@Autowired
 	private UserService userService;
 	
+	
+	@RequestMapping(value = "/index" )
+	public String index(){
+		return "index";
+	}
+	
 	/**
 	 * 用户登陆
 	 * @param user 

@@ -212,7 +212,7 @@
 						<%-- 						<img src="<%=path%>/img/kf_phone.jpg" width="158" height="27"> --%>
 					</h1>
 					<p class="context">
-						<a href="tencent://message/?uin=&amp;Site=cherry&amp;Menu=yes">
+						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=295315371&site=qq&menu=yes">
 							<strong>X老师</strong><br> Tel: xxx-xxxx-xxxx
 						</a>
 					</p>

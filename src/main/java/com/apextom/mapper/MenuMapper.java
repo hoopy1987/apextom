@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.type.JdbcType;
 
-import com.apextom.domain.ProjectsModel;
+import com.apextom.domain.MenuTreeModel;
 
 public interface MenuMapper extends SqlMapper{
 
@@ -17,13 +17,13 @@ public interface MenuMapper extends SqlMapper{
 	 * @param ptype 
 	 * @return 用户功能菜单树
 	 */
-	@Select("SELECT ID,PNAME,PTYPE,ORDERS FROM PROJECTS WHERE PTYPE = #{ptype} ORDER BY ORDERS")
+	@Select("SELECT ID,MENU_NAME,MENU_URL,PID FROM MENU WHERE PID = #{pid} ORDER BY PID,MENU_ORDER")
 	@Results(value = {
 			@Result(column="ID",property="id",javaType=Integer.class,jdbcType=JdbcType.INTEGER),
-			@Result(column="PNAME",property="pname",javaType=String.class,jdbcType=JdbcType.VARCHAR),
-			@Result(column="PTYPE",property="ptype",javaType=String.class,jdbcType=JdbcType.VARCHAR),
-			@Result(column="ORDERS",property="order",javaType=Integer.class,jdbcType=JdbcType.INTEGER)
+			@Result(column="MENU_NAME",property="text",javaType=String.class,jdbcType=JdbcType.VARCHAR),
+			@Result(column="PID",property="pid",javaType=Integer.class,jdbcType=JdbcType.INTEGER),
+			@Result(column="MENU_URL",property="url",javaType=String.class,jdbcType=JdbcType.VARCHAR)
 	})
-	List<ProjectsModel> queryMenuTreeByPtype(String ptype);
+	List<MenuTreeModel> queryMenuTree(int pid);
 
 }

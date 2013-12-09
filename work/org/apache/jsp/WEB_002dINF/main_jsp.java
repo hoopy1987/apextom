@@ -129,9 +129,11 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\tvar id = node.id;\n");
       out.write("\t\t\t\tvar ptype = node.attributes.ptype;\n");
       out.write("\t\t\t\t\n");
+      out.write("\t\t\t\talert(node.attributes.url);\n");
+      out.write("\t\t\t\t\n");
       out.write("\t\t\t\tvar url = '");
       out.print(path);
-      out.write("/articlelist/ptype/' + ptype + '/aid/' + id;\n");
+      out.write("/' + node.attributes.url;\n");
       out.write("\t\t\t\t\n");
       out.write("\t\t\t\topen1(node.text,url);\n");
       out.write("\t\t\t}\n");

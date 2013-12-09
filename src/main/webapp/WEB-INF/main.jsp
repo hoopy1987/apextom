@@ -52,7 +52,9 @@ $(function(){
 				var id = node.id;
 				var ptype = node.attributes.ptype;
 				
-				var url = '<%=path%>/articlelist/ptype/' + ptype + '/aid/' + id;
+				alert(node.attributes.url);
+				
+				var url = '<%=path%>/' + node.attributes.url;
 				
 				open1(node.text,url);
 			}

@@ -36,7 +36,7 @@ public class UserModel extends BaseObj {
 	private String username;
 	
 	/**
-	 * 登录认证类型
+	 * 登录认证类型(0:管理员，1：普通教师)
 	 */
 	private String authType;
 	
